@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speed Test Analysis</title>
+</head>
+<body>
+
+  <!-- Main heading of the typing test application -->
+  <h1>Speed Typing Analysis</h1>
+
+  <!-- Label for the predefined text area -->
+  <label for="inputText">Type the following text:</label><br>
+
+  <!-- 
+    This textarea displays the predefined text.
+    readonly means user cannot type inside this box.
+    JavaScript will insert the text here when test starts.
+  -->
+  <textarea id="inputText" cols="50" rows="5" readonly 
+  placeholder="Get ready to type..."></textarea><br>
+
+  <!-- Label for user's typing area -->
+  <label for="userInput">Your typing:</label><br>
+
+  <!-- 
+    This textarea is where the user will type.
+    JavaScript will later read value from this box.
+  -->
+  <textarea id="userInput" cols="50" rows="5" 
+  placeholder="Start typing when ready"></textarea><br>
+
+  <!-- 
+    Start Test button
+    When clicked, it will call startTest() function 
+    (We will define this in JS file in next steps)
+  -->
+  <button onclick="startTest()">Start Test</button>
+
+  <!-- 
+    End Test button
+    When clicked, it will call endTest() function
+    (We will define this in JS file later)
+  -->
+  <button onclick="endTest()">End Test</button>
+
+  <!-- 
+    This div will display:
+    - Words typed
+    - Time taken
+    - WPM result
+    JavaScript will update this dynamically
+  -->
+  <div id="output"></div>
+
+  <!-- Linking external JavaScript file -->
+  <script src="./speed_analysis.js"></script>
+
+</body>
+</html>
