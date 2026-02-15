@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This sets character encoding to support all text formats -->
+
+    <title>Book Management System</title>
+    <!-- This title appears on the browser tab -->
+</head>
+
+<body>
+
+    <!-- Main heading of the application -->
+    <h1>Book Management System</h1>
+
+    <!-- Input field for Book Name -->
+    <label for="bookName">Book Name:</label><br>
+    <!-- id="bookName" allows JavaScript to access this input later -->
+    <input type="text" id="bookName"><br><br>
+
+    <!-- Input field for Author Name -->
+    <label for="authorName">Author Name:</label><br>
+    <!-- textarea allows multiple lines of input -->
+    <textarea id="authorName" rows="4"></textarea><br><br>
+
+    <!-- Input field for Book Description -->
+    <label for="bookDescription">Book Description:</label><br>
+    <!-- This is also a textarea for longer content -->
+    <textarea id="bookDescription" rows="4"></textarea><br><br>
+
+    <!-- Input field for Number of Pages -->
+    <label for="pagesNumber">No. of Pages:</label><br>
+    <!-- type="number" restricts input to numbers -->
+    <input type="number" id="pagesNumber"><br><br>
+
+    <!-- Button to add book -->
+    <!-- When clicked, it calls addBook() function from JavaScript -->
+    <button onclick="addBook()">Add Book</button>
+
+    <!-- Section heading for displaying books -->
+    <h2>books</h2>
+
+    <!-- This div is where all books will be displayed dynamically -->
+    <div id="books">
+        <!-- JavaScript will insert book entries here -->
+    </div>
+
+    <!-- Linking external JavaScript file -->
+    <!-- This must be placed before closing body tag -->
+    <script src="./book_system.js"></script>
+
+</body>
+</html>
